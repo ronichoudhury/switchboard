@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "Switchboard",
+  "description": "This extension adds an 'open in GMail' button to messages in Google Inbox",
+  "version": "0.1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["https://inbox.google.com/*"],
+      "js": ["page.js"]
+    }
+  ]
+}
