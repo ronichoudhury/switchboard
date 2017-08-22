@@ -1,0 +1,9 @@
+# Vim swap files
+*.swp
+
+# Node stuff
+node_modules
+package-lock.json
+
+# Build directory
+build
