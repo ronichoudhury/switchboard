@@ -4,7 +4,7 @@
   "description": "A plugin for Google Inbox to allow opening messages in GMail",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/ronichoudhury/switchboard/issues"
   },
-  "homepage": "https://github.com/ronichoudhury/switchboard#readme"
+  "homepage": "https://github.com/ronichoudhury/switchboard#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "webpack": "^3.5.5"
+  }
 }
