@@ -1,5 +1,1 @@
-const hello_world = () => {
-  return 'hello, world';
-}
-
-console.log(hello_world());
+alert('hello, world; this is switchboard');

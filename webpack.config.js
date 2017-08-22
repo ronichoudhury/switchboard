@@ -1,5 +1,7 @@
 var path = require('path');
 
+var CopyWebpackPlugin = require('copy-webpack-plugin');
+
 module.exports = {
   entry: {
     switchboard: './src/index.js'
@@ -23,5 +25,13 @@ module.exports = {
         ]
       }
     ]
-  }
+  },
+  plugins: [
+    new CopyWebpackPlugin([
+      {
+        from: 'src/manifest.json',
+        to: 'manifest.json'
+      }
+    ])
+  ]
 };
