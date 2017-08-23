@@ -8,11 +8,17 @@ const injectPermalink = (msgView) => {
 
     const parentNode = select('div.hJ').node().parentNode;
     select(parentNode)
-      .insert('div', 'div.hJ + *')
+      .insert('div', 'div.hJ')
+      .classed('e8', true)
+      .style('display', 'inline-block')
+      .style('position', 'relative')
+      .style('top', '8px')
+      .style('margin-right', '4px')
       .append('a')
       .attr('href', permalink)
       .attr('target', '_blank')
-      .text('open in gmail');
+      .append('img')
+      .attr('src', chrome.extension.getURL('gmail.png'));
   });
 };
 

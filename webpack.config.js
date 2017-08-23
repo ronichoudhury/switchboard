@@ -35,6 +35,10 @@ module.exports = {
       {
         from: 'src/inboxsdk.js',
         to: 'inboxsdk.js'
+      },
+      {
+        from: 'src/gmail.png',
+        to: 'gmail.png'
       }
     ])
   ]
