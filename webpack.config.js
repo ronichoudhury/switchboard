@@ -31,6 +31,14 @@ module.exports = {
       {
         from: 'src/manifest.json',
         to: 'manifest.json'
+      },
+      {
+        from: 'src/inboxsdk.js',
+        to: 'inboxsdk.js'
+      },
+      {
+        from: 'src/gmail.png',
+        to: 'gmail.png'
       }
     ])
   ]
