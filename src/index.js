@@ -1,4 +1,5 @@
-import { select } from 'd3-selection';
+import { event,
+         select } from 'd3-selection';
 
 const injectPermalink = (msgView) => {
   msgView.getMessageIDAsync().then(id => {
@@ -22,6 +23,9 @@ const injectPermalink = (msgView) => {
       .append('a')
       .attr('href', permalink)
       .attr('target', '_blank')
+      .on('click', () => {
+        event.stopPropagation();
+      })
       .append('img')
       .attr('src', chrome.extension.getURL('gmail.png'));
   });
