@@ -31,6 +31,6 @@ const injectPermalink = (msgView) => {
   });
 };
 
-InboxSDK.load('2', 'switchboard').then(sdk => {
+InboxSDK.load('2', 'sdk_switchboard_1b8cb242f7').then(sdk => {
   sdk.Conversations.registerMessageViewHandler(injectPermalink);
 });
