@@ -6,7 +6,12 @@ const injectPermalink = (msgView) => {
     const pathname = window.location.pathname;
     const permalink = `${origin}/mail${pathname}#inbox/${id}`;
 
-    const parentNode = select('div.hJ').node().parentNode;
+    const msgBody = msgView.getBodyElement();
+    const parentNode = select(msgBody.parentNode)
+      .select('div.hJ')
+      .node()
+      .parentNode;
+
     select(parentNode)
       .insert('div', 'div.hJ')
       .classed('e8', true)
